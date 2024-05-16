@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+
+        <section>
+            <h2>Fale Conosco</h2>
+            <form action="obrigado.html" method="post">
+                <label>Nome:</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+
+                <label> Assunto: </label>
+                <select name="assunto" required>
+                <option value="Sugestão"> Sugestão </option>
+                <option value="Reclamação"> Reclamação </option>
+                <option value="Elogio"> Elogio </option>
+                <option value="Dúvidas"> Dúvdas sobre os nossos serviços </option>
+                </select>
+                
+                <label>Mensagem:</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+
+                <label> Concordo com os termos de privacidade do site.</label>
+                <input type="checkbox" name="termo" value="aceito" required>
+                <button type="submit"> Enviar </button>
+                <button type="reset"> Apagar </button>
+                                
+                <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+            </form>
+        </section>
+        <section>
+            <h2 >Informações de Contato por Telefone</h2>
+            <p >Terça-Domingo: 18:00 às 00:00h</p>
+            <p >(83) 98798-2344</p>
+        </section>
+    </body>
+
+    </html>
