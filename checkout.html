@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>PizzaLero</title>
+        <link rel="stylesheet" href="css pizzalero.css">
+        
+    </head>
+    <header>
+
+    </header>
+    <body>
+        <div>
+            <div>
+                <p>Endereço para entrega</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <form>
+                    <label for="endereço">Rua</label>
+                    <input type="text" id="endereço" name="endereço" value="">
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" name="numero" value="">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" name="complemento" value="">
+                    
+                </form>
+            </div>            
+        </div>
+        <div>
+            <div>
+                <p>Forma de Pagamento</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <form>
+                    <label for="pix">PIX</label>
+                    <input type="checkbox" name="pix" id="pix" value="pix">
+                    <label for="credcard">Cartão de Crédito</label>
+                    <input type="checkbox" name="credcard" id="credcard" value="credcard">
+                    <label for="tkt">Vale Refeição</label>
+                    <input type="checkbox" name="tkt" id="tkt" value="tkt">
+                    <label for="debito">Cartão de Débito</label>
+                    <input type="checkbox" name="debito" id="debito" value="debito">                    
+                </form>
+            </div>
+            <div>
+                <div>
+                    <img src="https://qrcg-free-editor.qr-code-generator.com/main/assets/images/websiteQRCode_noFrame.png" alt="Qrcodegenerico" width="150px">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <form action="obrigadocheckout.html" method="post">
+                        <input type="submit" id="encerrarcompra" name="encerrarcompra" value="Encerrar Compra">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>    
