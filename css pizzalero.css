@@ -308,7 +308,7 @@ footer li a{
 .submit {
   border: none;
   outline: none;
-  background-color: royalblue;
+  background-color: black;
   padding: 10px;
   border-radius: 10px;
   color: #fff;
@@ -317,7 +317,7 @@ footer li a{
 }
 
 .submit:hover {
-  background-color: rgb(56, 90, 194);
+  background-color: black;
 }
 
 @keyframes pulse {
@@ -332,13 +332,58 @@ footer li a{
   }
 }
 .cardapio {
-  display:block;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 50px;
+  background-color: #1f1e1f;
+  
+  
 }
 .imagem_cardapio {
  height: 150px;
  width: 200px;
+ 
 }
 .info{
-
+  padding-left: 55px;
+  color: #fff;
 }
-      
+.pedir{
+  border: none;
+  outline: none;
+  background-color: #ffc506;
+  padding: 10px;
+  border-radius: 10px;
+  color:#1f1e1f;
+  font-size: 16px;
+  transform: .3s ease;
+  cursor: pointer;
+}
+.fonte{
+  font-size: 5rem;
+  background-image:linear-gradient(rgba(29,29,29,0.6),rgba(29,29,29,0.6)),url(1045822.jpg);
+  color: #ffc506;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.fale-conosco{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #ffc506;
+  max-width: 350px;
+  max-height: 400px;
+}
+.info2{
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
