@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <title>PizzaLero</title>
-        <link rel="stylesheet" href="css pizzalero.css">
-        
-    </head>
-    <header>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>checkbox</title>
+    <link rel="stylesheet" href="css pizzalero.css">
+    <style>
+    form{
+        background-color: #ffc506;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 500px;
+    
+    }
+    form div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    form input{
+        outline: unset;
+        padding: 15px;
+        width: 440px;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    form button{
+        outline: unset;
+        padding: 7px;
+        width: 300px;
+        border: 1px solid;
+        border-radius: 20px;  
+    }
+    body{
+        background-color: #1f1e1f;
+    }
+    .centralizaaaaaaaa{
+        align-items: center;
+        justify-content: center; 
+    }
+    img{
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+</style>
+</head>
+<body>
+    <header class="content">
+        <a href="pizzalero.html"><div class="logo">
+            <img src="logopizza.png" alt="">
+            <h3>PizzaLero</h3>
+        </div></a>
+        <nav>
+            <ul class="list-menu">
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="entrar_cadastro.html">Minha Conta</a></li>
+                <li><a href="fale_conosco.html  ">Fale Conosco</a></li>
+                <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="carrinho.html"><i class="bi bi-cart3"></i></a></li>
+            </ul> 
+        </nav>
     </header>
+    <div class="ajuste2">
     <body>
         <div>
             <div>
-                <p>Endereço para entrega</p>
+                <p class="fonte">Endereço para entrega</p>
             </div>
         </div>
+        <section class="form2">
         <div>
             <div>
                 <form>
+                    <label>Informe seus Dados</label>
                     <label for="endereço">Rua</label>
                     <input type="text" id="endereço" name="endereço" value="">
                     <label for="numero">Número</label>
                     <input type="number" id="numero" name="numero" value="">
                     <label for="complemento">Complemento</label>
                     <input type="text" id="complemento" name="complemento" value="">
-                    
-                </form>
-            </div>            
-        </div>
-        <div>
-            <div>
-                <p>Forma de Pagamento</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <form>
+  
+                    <label>Forma De Pagamento</label>
                     <label for="pix">PIX</label>
                     <input type="checkbox" name="pix" id="pix" value="pix">
                     <label for="credcard">Cartão de Crédito</label>
@@ -47,19 +99,26 @@
                     <label for="debito">Cartão de Débito</label>
                     <input type="checkbox" name="debito" id="debito" value="debito">                    
                 </form>
+
             </div>
-            <div>
-                <div>
-                    <img src="https://qrcg-free-editor.qr-code-generator.com/main/assets/images/websiteQRCode_noFrame.png" alt="Qrcodegenerico" width="150px">
-                </div>
-            </div>
-            <div>
+
                 <div>
                     <form action="obrigadocheckout.html" method="post">
                         <input type="submit" id="encerrarcompra" name="encerrarcompra" value="Encerrar Compra">
+                    
                     </form>
+                    <div>
+                        <div>
+                            <img src="https://qrcg-free-editor.qr-code-generator.com/main/assets/images/websiteQRCode_noFrame.png" alt="Qrcodegenerico" width="150px">
+                        </div>
+                    </div>
+                    <div>
                 </div>
             </div>
         </div>
+    </div>
+
+</section>
+
     </body>
 </html>    
