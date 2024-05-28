@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,51 @@
     <title>Fale conosco</title>
     <link rel="stylesheet" href="css pizzalero.css">
     <style>
-        form{
+        form {
             background-color: #ffc506;
             padding: 30px;
             border-radius: 20px;
         }
-        form div{
+
+        form div {
             display: flex;
             flex-direction: column;
             margin-bottom: 30px;
         }
-        form input, form textarea, form button, form select{
+
+        form input,
+        form textarea,
+        form button,
+        form select {
             outline: unset;
             padding: 15px;
             width: 440px;
             border: 1px solid black;
             border-radius: 20px;
         }
-        form button{
+
+        form button {
             outline: unset;
             padding: 7px;
             width: 300px;
             border: 1px solid;
-            border-radius: 20px;  
+            border-radius: 20px;
         }
-        body{
+
+        body {
             background-color: #1f1e1f;
         }
-        
     </style>
 </head>
+
 <body>
     <header class="content">
-        <a href="pizzalero.html"><div class="logo">
-            <img src="logopizza.png" alt="">
-            <h3>PizzaLero</h3>
-        </div></a>
+        <a href="pizzalero.html">
+            <div class="logo">
+                <img src="logopizza.png" alt="">
+                <h3>PizzaLero</h3>
+            </div>
+        </a>
         <nav>
             <ul class="list-menu">
                 <li><a href="#">Nossa História</a></li>
@@ -51,7 +61,7 @@
                 <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="cardápio.html"><i class="bi bi-cart3"></i></a></li>
-            </ul> 
+            </ul>
         </nav>
     </header>
     <div class="ajuste2">
@@ -60,46 +70,46 @@
 
             <form action="obrigado.html" method="post">
                 <div class="info2">
-                <label>Nome:</label>
-                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-            </div>
-            <div class="info2">
-                <label>Email:</label>
-                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
-            </div>
-            <div class="info2">
-                <label> Assunto: </label>
-                <select name="assunto" required>
-                <option value="Sugestão"> Sugestão </option>
-                <option value="Reclamação"> Reclamação </option>
-                <option value="Elogio"> Elogio </option>
-                <option value="Dúvidas"> Dúvdas sobre os nossos serviços </option>
-                </select>
-            </div>
-            <div class="info2">
-                <label>Mensagem:</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-            </div>
+                    <label>Nome:</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                </div>
+                <div class="info2">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                </div>
+                <div class="info2">
+                    <label> Assunto: </label>
+                    <select name="assunto" required>
+                        <option value="Sugestão"> Sugestão </option>
+                        <option value="Reclamação"> Reclamação </option>
+                        <option value="Elogio"> Elogio </option>
+                        <option value="Dúvidas"> Dúvdas sobre os nossos serviços </option>
+                    </select>
+                </div>
+                <div class="info2">
+                    <label>Mensagem:</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                </div>
 
-            <div class="info2">               
-                <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
-            </div>
-            <div class="info2">
-                <label> Concordo com os termos de privacidade do site.</label>
-                <input type="checkbox" name="termo" value="aceito" required>
-                <button type="submit"> Enviar </button>
-                <button type="reset"> Apagar </button>
-            </div>
-        </div>
-            </form>
-        <section>
-            <h2 >Informações de Contato por Telefone</h2>
-            <p >Terça-Domingo: 18:00 às 00:00h</p>
-            <p >(83) 98798-2344</p>
-        </section>
-    
+                <div class="info2">
+                    <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+                </div>
+                <div class="info2">
+                    <label> Concordo com os termos de privacidade do site.</label>
+                    <input type="checkbox" name="termo" value="aceito" required>
+                    <a href="obrigado.html"><button type="submit"> Enviar </button></a>
+                    <button type="reset"> Apagar </button>
+                </div>
+    </div>
+    </form>
+    <section>
+        <h2>Informações de Contato por Telefone</h2>
+        <p>Terça-Domingo: 18:00 às 00:00h</p>
+        <p>(83) 98798-2344</p>
+    </section>
 
-    </body>
 
-    </html>
+</body>
+
+</html>
